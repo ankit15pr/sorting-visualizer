@@ -49,7 +49,8 @@ function generateArray() {
 
 // Function to fetch data from backend (GET API)
 async function fetchSortingData(algorithm) {
-    const response = await fetch(`http://localhost:8080/api/sort?algorithm=${algorithm}&size=${arraySize}&delay=${delay}`);
+    // const response = await fetch(`http://localhost:8080/api/sort?algorithm=${algorithm}&size=${arraySize}&delay=${delay}`);
+    const response = await fetch(`/api/sort?algorithm=${algorithm}&size=${arraySize}&delay=${delay}`);
     const sortedData = await response.json();
     console.log(sortedData);  // Debugging: Check what data we received
     visualizeSorting(sortedData.steps);
