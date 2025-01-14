@@ -1,0 +1,71 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    text-align: center;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+/* Array Container */
+.array-container {
+    display: flex;
+    justify-content: flex-start; /* Align bars horizontally */
+    align-items: flex-end;       /* Align bars to the bottom */
+    height: 400px;               /* Set the height of the container */
+    margin-top: 20px;
+    gap: 2px;                    /* Add gap between bars */
+    position: relative;
+    overflow: hidden;            /* Prevent horizontal scroll */
+}
+
+/* Bar Styling */
+.bar {
+    width: 10px;
+    background-color: #4CAF50;
+    transition: all 0.3s ease; /* Smooth transition for height changes */
+}
+
+/* Highlighting Bars */
+.selected {
+    background-color: #FF6347; /* Color for selected bar */
+}
+
+.swapped {
+    background-color: #FFD700; /* Color for swapped bars */
+}
+
+.sorted {
+    background-color: #90EE90; /* Color for sorted bars */
+}
+
+/* Optional button styling */
+button {
+    padding: 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #007B8C;
+}
+
+input[type="range"] {
+    width: 200px;
+    margin: 10px 0;
+}
